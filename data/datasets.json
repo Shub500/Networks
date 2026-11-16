@@ -1,0 +1,225 @@
+{
+  "corruption": {
+    "n": 309,
+    "m": 3281,
+    "node_base": 1,
+    "directed": false,
+    "sha256": "33e4c623b4d1ead7b65272064d5f5b1223ea37b9ce8cd951b9ca8f970c9368f1",
+    "url": "https://raw.githubusercontent.com/renxiaolong/Generalized-Network-Dismantling/111a26ee678f41c3fa7219b64c328c56efc47296/Datasets_Main_Paper/Corruption_Gcc.txt",
+    "preprocessing": "author GCC, no further GCC extraction",
+    "cap_rule": "max(1,floor(fraction*n))",
+    "cap_fractions": [
+      0.01,
+      0.02
+    ],
+    "distribution": "provenance only; obtain graph from source URL",
+    "license": "author release; redistribution license unspecified"
+  },
+  "crime": {
+    "n": 754,
+    "m": 2127,
+    "node_base": 1,
+    "directed": false,
+    "sha256": "bcd47596efc9db1dec3176fc3827527d62fa4ea488a6864c247961f445750bf2",
+    "url": "https://raw.githubusercontent.com/renxiaolong/Generalized-Network-Dismantling/111a26ee678f41c3fa7219b64c328c56efc47296/Datasets_Main_Paper/Crime_Gcc.txt",
+    "preprocessing": "author GCC, no further GCC extraction",
+    "cap_rule": "max(1,floor(fraction*n))",
+    "cap_fractions": [
+      0.01,
+      0.02
+    ],
+    "distribution": "provenance only; obtain graph from source URL",
+    "license": "author release; redistribution license unspecified"
+  },
+  "road_eu": {
+    "n": 1039,
+    "m": 1305,
+    "node_base": 1,
+    "directed": false,
+    "sha256": "a506aa099538b5511abb65bd6acfb806895a66c9985df447bfc4203d50d9bccc",
+    "url": "https://raw.githubusercontent.com/renxiaolong/Generalized-Network-Dismantling/111a26ee678f41c3fa7219b64c328c56efc47296/Datasets_SI/RodeEU_gcc.txt",
+    "preprocessing": "author GCC, original 1-based IDs, no further extraction",
+    "cap_rule": "max(1,floor(fraction*n))",
+    "cap_fractions": [
+      0.01,
+      0.02
+    ],
+    "additional_igplus_native_cap_fractions": [
+      0.1
+    ],
+    "distribution": "provenance only; obtain graph from source URL",
+    "license": "author release; redistribution license unspecified"
+  },
+  "hamster": {
+    "n": 2000,
+    "m": 16098,
+    "node_base": 1,
+    "directed": false,
+    "sha256": "c40e4ab5843a42a1635a7fbe447310441e4f4bafede6ee2464d8188b29d945e2",
+    "url": "https://raw.githubusercontent.com/renxiaolong/Generalized-Network-Dismantling/111a26ee678f41c3fa7219b64c328c56efc47296/Datasets_Main_Paper/Petster-Hamster_GCC.txt",
+    "preprocessing": "author GCC, no further GCC extraction",
+    "cap_rule": "max(1,floor(fraction*n))",
+    "cap_fractions": [
+      0.01,
+      0.02
+    ],
+    "distribution": "provenance only; obtain graph from source URL",
+    "license": "author release; redistribution license unspecified"
+  },
+  "ppi": {
+    "n": 2224,
+    "m": 6609,
+    "node_base": 1,
+    "directed": false,
+    "sha256": "47370f27e3073bff35d08a7a9dfc543a343eb6b6bb209da115fd7cceb90e5e5d",
+    "url": "https://raw.githubusercontent.com/renxiaolong/Generalized-Network-Dismantling/111a26ee678f41c3fa7219b64c328c56efc47296/Datasets_SI/PPI_gcc.txt",
+    "preprocessing": "author GCC, original 1-based IDs, no further extraction",
+    "cap_rule": "max(1,floor(fraction*n))",
+    "cap_fractions": [
+      0.01,
+      0.02
+    ],
+    "additional_igplus_native_cap_fractions": [
+      0.1
+    ],
+    "distribution": "provenance only; obtain graph from source URL",
+    "license": "author release; redistribution license unspecified"
+  },
+  "powergrid": {
+    "n": 4941,
+    "m": 6594,
+    "node_base": 1,
+    "directed": false,
+    "sha256": "e8da25e24dbb951b4c440cc9a9a0c560d261712cf8154708b3829529402915fe",
+    "url": "https://raw.githubusercontent.com/renxiaolong/Generalized-Network-Dismantling/111a26ee678f41c3fa7219b64c328c56efc47296/Datasets_Main_Paper/Grid.txt",
+    "preprocessing": "author GCC, no further GCC extraction",
+    "cap_rule": "max(1,floor(fraction*n))",
+    "cap_fractions": [
+      0.01,
+      0.02
+    ],
+    "distribution": "provenance only; obtain graph from source URL",
+    "license": "author release; redistribution license unspecified"
+  },
+  "internet": {
+    "n": 6474,
+    "m": 12572,
+    "node_base": 1,
+    "directed": false,
+    "sha256": "ffbbd743968de3fc7a8d93cbec548d766957d7e06f26907c77ec7ca62549b03c",
+    "url": "https://raw.githubusercontent.com/renxiaolong/Generalized-Network-Dismantling/111a26ee678f41c3fa7219b64c328c56efc47296/Datasets_SI/IntNet1_gcc.txt",
+    "preprocessing": "author GCC, original 1-based IDs, no further extraction",
+    "cap_rule": "max(1,floor(fraction*n))",
+    "cap_fractions": [
+      0.01,
+      0.02
+    ],
+    "additional_igplus_native_cap_fractions": [
+      0.1
+    ],
+    "distribution": "provenance only; obtain graph from source URL",
+    "license": "author release; redistribution license unspecified"
+  },
+  "large_ca_astroph": {
+    "archive_member": "ca-AstroPh.mtx",
+    "archive_sha256": "edd6c756abd8ef9aaa458b48d1c243fc4ea6cb3e750bb68ecff4124cbaa19c6e",
+    "directed": false,
+    "license_url": "https://networkrepository.com/policy.php",
+    "m": 196972,
+    "mapping_sha256": "e3f5b75fa8e92df16523cb70e69389b34956653fa65b8314d38883c18074c3be",
+    "n": 17903,
+    "node_base": 0,
+    "original_graph_sha256": "12b4f5aec883b8f690939a06cc628233d2e1091bdd2acc15e6682306f82ac2fd",
+    "preprocessing": "Full declared matrix universe retained; source row ID minus 1; remove loops; coalesce duplicate/reciprocal edges; lexicographic simple undirected edge list; no new GCC extraction",
+    "preprocessing_counts": {
+      "components": 1,
+      "isolates": 0,
+      "lcc": 17903,
+      "m": 196972,
+      "matrix_entries": 196972,
+      "n": 17903,
+      "reciprocal_entries_coalesced": 0,
+      "repeated_directed_entries": 0,
+      "self_loops_removed": 0,
+      "source_symmetry": "symmetric"
+    },
+    "sha256": "5c864bdfac9dfdcd68d013008f04a4f3c9274dd7c18380e37762137e64092d7e",
+    "source_page": "https://networkrepository.com/ca-AstroPh.php",
+    "url": "https://nrvis.com/download/data/ca/ca-AstroPh.zip",
+    "cap_rule": "max(1,floor(fraction*n))",
+    "cap_fractions": [
+      0.01,
+      0.02
+    ],
+    "distribution": "provenance only; obtain graph from source URL",
+    "license": "repository-stated CC BY-SA; version unspecified"
+  },
+  "large_as_caida2007": {
+    "archive_member": "tech-as-caida2007.mtx",
+    "archive_sha256": "23a1415cdc457eca07b0e7d1aa5a16373b889f743e46f1f48eef659967765ce0",
+    "directed": false,
+    "license_url": "https://networkrepository.com/policy.php",
+    "m": 53381,
+    "mapping_sha256": "afcc4165805db8e33e7ba1ec8452f229b0799b54592eab1cc560c7753b66b8df",
+    "n": 26475,
+    "node_base": 0,
+    "original_graph_sha256": "292458641a4685b89ad28c3a230848d76f79a6c6d59e4ecfc1bdce58b657a030",
+    "preprocessing": "Full declared matrix universe retained; source row ID minus 1; remove loops; coalesce duplicate/reciprocal edges; lexicographic simple undirected edge list; no new GCC extraction",
+    "preprocessing_counts": {
+      "components": 1,
+      "isolates": 0,
+      "lcc": 26475,
+      "m": 53381,
+      "matrix_entries": 53381,
+      "n": 26475,
+      "reciprocal_entries_coalesced": 0,
+      "repeated_directed_entries": 0,
+      "self_loops_removed": 0,
+      "source_symmetry": "symmetric"
+    },
+    "sha256": "5bcbc2b91f8e71e90afabdd8081881402b055d80686bdfcb2acbb50fc77efbea",
+    "source_page": "https://networkrepository.com/tech-as-caida2007.php",
+    "url": "https://nrvis.com/download/data/tech/tech-as-caida2007.zip",
+    "cap_rule": "max(1,floor(fraction*n))",
+    "cap_fractions": [
+      0.01,
+      0.02
+    ],
+    "distribution": "provenance only; obtain graph from source URL",
+    "license": "repository-stated CC BY-SA; version unspecified"
+  },
+  "large_p2p_gnutella31": {
+    "archive_member": "p2p-Gnutella31.mtx",
+    "archive_sha256": "73b39bd57a463e5a51e07ada8baa5af3f0dbc7f3c9c11b159b577eb4ed05b655",
+    "directed": false,
+    "license_url": "https://networkrepository.com/policy.php",
+    "m": 147892,
+    "mapping_sha256": "f3d51b727f7da8966f7009bad7fc70f6b9aba7a7fec0170f38d806550bff05b1",
+    "n": 62586,
+    "node_base": 0,
+    "original_graph_sha256": "d6c40309fa606710cad35eed1c0471772163944895b924a320b70cfe1f2f7d4d",
+    "preprocessing": "Full declared matrix universe retained; source row ID minus 1; remove loops; coalesce duplicate/reciprocal edges; lexicographic simple undirected edge list; no new GCC extraction",
+    "preprocessing_counts": {
+      "components": 12,
+      "isolates": 0,
+      "lcc": 62561,
+      "m": 147892,
+      "matrix_entries": 147892,
+      "n": 62586,
+      "reciprocal_entries_coalesced": 0,
+      "repeated_directed_entries": 0,
+      "self_loops_removed": 0,
+      "source_symmetry": "general"
+    },
+    "sha256": "93ac608892cdf573ea91b26512527cee7a0aa8b03927ab64de81edccedfaa717",
+    "source_page": "https://networkrepository.com/p2p-Gnutella31.php",
+    "url": "https://nrvis.com/download/data/misc/p2p-Gnutella31.zip",
+    "cap_rule": "max(1,floor(fraction*n))",
+    "cap_fractions": [
+      0.01,
+      0.02
+    ],
+    "distribution": "provenance only; obtain graph from source URL",
+    "license": "repository-stated CC BY-SA; version unspecified"
+  }
+}

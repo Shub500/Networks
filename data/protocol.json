@@ -1,0 +1,130 @@
+{
+  "model": {
+    "graph": "fixed simple undirected",
+    "vertex_ids": "0..n-1",
+    "objective": "unit vertex deletions",
+    "cap": "integer >=1",
+    "input": "feasible deleted-vertex set"
+  },
+  "clock": "max(elapsed wall seconds, process CPU seconds); index construction, search, RG and verification included",
+  "panels": [
+    {
+      "name": "core",
+      "graphs": 7,
+      "constructors": {
+        "Core/Mass+RG": 14,
+        "IG+ with RG": 9,
+        "MACC-CNP+RG": 27
+      },
+      "screen_state_factorial": {
+        "seconds": 30,
+        "repetitions": 2,
+        "serial": true,
+        "screen": [
+          false,
+          true
+        ],
+        "incremental_state": [
+          false,
+          true
+        ]
+      },
+      "orientation": {
+        "seconds": 30,
+        "repetitions": 2,
+        "serial": true,
+        "reference": "whole-graph delete-first reimplementation"
+      },
+      "algorithm1_seconds": 10,
+      "instances": 50,
+      "constructor_grid": {
+        "Core/Mass+RG": "7 graphs x 2 caps",
+        "IG+ with RG": "RoadEU, PPI and Internet x 3 caps",
+        "MACC-CNP+RG": "RoadEU, PPI and Internet x 3 caps x 3 runs",
+        "core_cap_fractions": [
+          0.01,
+          0.02
+        ],
+        "external_constructor_cap_fractions": [
+          0.01,
+          0.02,
+          0.1
+        ]
+      }
+    },
+    {
+      "name": "pair_closed",
+      "graphs": 7,
+      "input": "All 73 distinct graph/cap/cut endpoints from 277 independently verified closed runs in the 50-start, three-orientation, two-repetition comparison",
+      "algorithm1_seconds": 5,
+      "instances": 73
+    },
+    {
+      "name": "larger",
+      "graphs": 3,
+      "constructors": {
+        "IG+ with RG": 18
+      },
+      "continuation_input": "plans returned by Layer-1 pair repair after IG+ with RG, within 120 seconds",
+      "fractions": [
+        0.01,
+        0.02
+      ],
+      "repeat_labels": [
+        101,
+        211,
+        307
+      ],
+      "complete_pipeline_seconds": 120,
+      "generation_fraction": 0.5,
+      "pair_options": {
+        "max_bags": null,
+        "max_moves": null,
+        "candidate_index": "incidence",
+        "pair_boundary_screen": true
+      },
+      "continuation_seconds": 25,
+      "seed_scope": "guarded shuffle varies; IG+ and pair order deterministic",
+      "instances": 18,
+      "repeat_label_meaning": "Labels identify the three runs and select the guarded-control shuffle; IG+ and pair ordering are deterministic"
+    },
+    {
+      "name": "singleton_gate",
+      "repetitions": 2,
+      "seconds": 10,
+      "factorial": {
+        "bounds": [
+          "off",
+          "on"
+        ],
+        "scalar_signatures": [
+          "off",
+          "on"
+        ],
+        "history": [
+          "off",
+          "exact",
+          "private"
+        ]
+      },
+      "instances": 50
+    }
+  ],
+  "native_seed_scope": "MACC-CNP native seed not controlled by run label",
+  "verification": "Every plan is checked by a full component traversal, inside the time budget, before it replaces the current plan. A replacement is smaller than the plan its search started from and never larger than the current plan.",
+  "higher_order": "Class I after RG saturation and a completed pair scan; Class II in components of size <=35; a neutral (1,1) swap is kept only when the repair that follows it yields a smaller plan.",
+  "algorithm1_parameters": {
+    "class_ii_size_cap_tau": 35,
+    "batch_commit_interval": 8,
+    "layer2_sequence": [
+      "class_i",
+      "class_ii",
+      "neutral_then_repair"
+    ],
+    "fixed_policy": "implementation/screen_restore/__init__.py:_ALGORITHM_OPTIONS"
+  },
+  "runtime": {
+    "python": "CPython 3.14",
+    "platform": "Linux"
+  }
+}
